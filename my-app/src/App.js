@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// U51313007
+// src/App.js
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import React from 'react';
+import MovieSelector from './components/MovieSelector';
+import UploadButton from './components/UploadButton';
+import `./App.css`;
+
+const movies = [
+    { id: 1, title: 'Inception' },
+    { id: 2, title: 'Interstellar' },
+    { id: 3, title: 'The Dark Knight' },
+];
+
+const App = () => {
+    return (
+      <div className="toolbar">
+      <h1>Interactive Media Toolbar</h1>
+      <MovieSelector movies={movies} />
+      <UploadButton />
+      </div>
+    );
+};
 
 export default App;
