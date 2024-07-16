@@ -4,7 +4,7 @@
 import React from 'react';
 import MovieSelector from './components/MovieSelector';
 import UploadButton from './components/UploadButton';
-import `./App.css`;
+import './App.css';
 
 const movies = [
     { id: 1, title: 'Inception' },
